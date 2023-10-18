@@ -9,15 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "next": "latest",
     "react": "latest",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "latest",
-    "next": "latest"
+    "react-icons": "^4.11.0",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
+    "daisyui": "^3.8.1",
     "eslint": "latest",
-    "eslint-config-next": "latest"
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
   }
 }

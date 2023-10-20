@@ -1,11 +1,11 @@
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
 import './globals.css'
-import { Roboto_Mono } from 'next/font/google'
+import { Roboto_Mono,Manrope } from 'next/font/google'
 
-const poppins = Roboto_Mono({ 
+const poppins = Manrope({ 
   subsets: ['latin'],
-  weight:'400',
+  weight:['400','600'],
   display:'block'
  })
 

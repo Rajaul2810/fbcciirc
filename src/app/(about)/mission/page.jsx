@@ -69,11 +69,11 @@ const visions = [
 
 const Mission = () => {
   return (
-    <section className=" flex justify-center mt-5 mb-5 bg-slate-50">
+    <section className=" flex justify-center pt-5 pb-5 bg-slate-50">
         <div className=" w-11/12 p-5 bg-white shadow-md rounded-md">
           <section className="">
-            <h1 className=" text-lg font-bold uppercase bg-rose-500 p-3 rounded-md">Mission</h1>
-            <p className=" text-sm text-gray-700 text-justify">
+            <h1 className=" text-lg font-bold uppercase bg-amber-400 p-3 ">Mission</h1>
+            <p className=" text-sm text-gray-700 text-justify pt-2">
               The mission of the FBCCI Innovation & Research Centre is to serve
               as a non-governmental, non-profit, non-political, and
               non-discriminatory organization that actively promotes,
@@ -94,12 +94,12 @@ const Mission = () => {
                 {missions.map((item) => (
                   <div
                     key={item.id}
-                    className=" shadow-md p-2 rounded-md bg-rose-50"
+                    className=" shadow-md p-2 rounded-md bg-amber-100"
                   >
                     <div className="">
                       <BsFillCheckCircleFill
                         size={25}
-                        className=" text-rose-600"
+                        className=" text-amber-600"
                       />
                     </div>
                     <div>
@@ -112,8 +112,8 @@ const Mission = () => {
             </div>
           </section>
           <section className="pt-5">
-            <h1 className=" text-lg font-bold uppercase bg-indigo-500 p-3 rounded-md">Vision</h1>
-            <p className=" text-sm text-gray-700 text-justify">
+            <h1 className=" text-lg font-bold uppercase bg-amber-400 p-3">Vision</h1>
+            <p className=" text-sm text-gray-700 text-justify pt-2">
               Our vision is to be a cornerstone of innovation and research in
               Bangladesh. We aspire to establish a dynamic ecosystem of
               interconnected centers that significantly contribute to the
@@ -131,12 +131,12 @@ const Mission = () => {
                 {missions.map((item) => (
                   <div
                     key={item.id}
-                    className=" shadow-sm p-2 rounded-md bg-indigo-100"
+                    className=" shadow-md p-2 rounded-md bg-amber-100"
                   >
                     <div className="">
                       <BsFillCheckCircleFill
                         size={25}
-                        className=" text-indigo-600"
+                        className=" text-amber-600"
                       />
                     </div>
                     <div>

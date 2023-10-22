@@ -8,13 +8,6 @@ import Image from "next/image";
 
 const teams = [
   {
-    id: 1,
-    name: "Dr. Bikarna Kumar Ghosh",
-    email: "bikarnag@gmail.com",
-    rule: "Chief Executive Officer",
-    photo: bikarna,
-  },
-  {
     id: 2,
     name: "Mr. Md. Entakhab Dinar",
     email: "mdshefat222@gmail.com",
@@ -46,7 +39,31 @@ const Team = () => {
         </h1>
       </div>
       <div className=" flex justify-center">
-        <div className=" w-11/12 md:w-10/12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-5 mb-5">
+        <div className=" w-72  md:grid-cols-4 gap-4 mt-5 mb-5">
+          <div className=" bg-white shadow-md hover:shadow-md rounded-md transition duration-150 hover:scale-105">
+            <div className=" flex justify-center">
+              <Image
+                src={bikarna}
+                alt="img"
+                className=" h-52 w-52 rounded-md shadow-sm p-2 bg-white"
+              />
+            </div>
+            <div className="flex-col justify-center p-4">
+              <h1 className=" font-bold text-center ">
+                Dr. Bikarna Kumar Ghosh
+              </h1>
+              <h1 className=" text-xs font-bold text-gray-700 text-center">
+                bikarnag@gmail.com
+              </h1>
+              <h1 className=" text-sm text-gray-700 text-center">
+                Chief Executive Officer
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className=" flex justify-center">
+        <div className=" w-72 md:w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5 mb-5">
           {teams.map((item) => (
             <div
               key={item.id}
@@ -56,13 +73,11 @@ const Team = () => {
                 <Image
                   src={item.photo}
                   alt="img"
-                  className=" h-52 w-full rounded-md shadow-sm p-2 bg-white"
+                  className=" h-52 w-52 rounded-md shadow-sm bg-white"
                 />
               </div>
               <div className="flex-col justify-center p-4">
-                <h1 className=" font-bold text-center ">
-                  {item.name}
-                </h1>
+                <h1 className=" font-bold text-center ">{item.name}</h1>
                 <h1 className=" text-xs font-bold text-gray-700 text-center">
                   {item.email}
                 </h1>

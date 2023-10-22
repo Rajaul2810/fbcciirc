@@ -3,24 +3,46 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logo from "../../../public/logo.png";
-import { FiChevronDown,FiFacebook,FiYoutube,FiLinkedin,FiTwitter } from "react-icons/fi";
-import { CiMail,CiPhone } from "react-icons/ci";
+import {
+  FiChevronDown,
+  FiFacebook,
+  FiYoutube,
+  FiLinkedin,
+  FiTwitter,
+} from "react-icons/fi";
+import { CiMail, CiPhone } from "react-icons/ci";
 
 const Navbar = () => {
   return (
     <>
-    <div className=" bg-amber-500 p-2 flex justify-between">
-      <div className=" flex gap-2">
-        <p className=" text-xs text-white flex items-center font-bold"><CiMail/>fbcci.irc@gmail.com</p>
-        <p className=" text-xs text-white flex items-center font-bold"><CiPhone/>+8801000000000</p>
-      </div> 
-      <div className=" flex text-white gap-3">
-        <a href="#"><FiFacebook/></a>
-        <a href="#"><FiLinkedin/></a>
-       <a href="#"> <FiTwitter/></a>
-       <a href="#"> <FiYoutube/></a>
+      <div className=" bg-amber-500 p-2 flex justify-between">
+        <div className=" flex gap-2">
+          <p className=" text-xs text-white flex items-center font-bold">
+            <CiMail />
+            fbcci.irc@gmail.com
+          </p>
+          <p className=" text-xs text-white flex items-center font-bold">
+            <CiPhone />
+            +8801000000000
+          </p>
+        </div>
+        <div className=" flex text-white gap-3">
+          <a href="#">
+            <FiFacebook />
+          </a>
+          <a href="#">
+            <FiLinkedin />
+          </a>
+          <a href="#">
+            {" "}
+            <FiTwitter />
+          </a>
+          <a href="#">
+            {" "}
+            <FiYoutube />
+          </a>
+        </div>
       </div>
-    </div>
       <div className="navbar bg-base-100 shadow-lg rounded-sm sticky top-0 z-50">
         <div className="navbar-center">
           <div className="dropdown">
@@ -45,19 +67,43 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link href="/" className=" text-md flex hover:bg-amber-300">
-                  HOME
+                <Link href="/" className=" text-lg flex hover:bg-amber-300 ">
+                  Home
                 </Link>
               </li>
-              <li>
-                <Link href="/about" className="text-md flex hover:bg-amber-300">
-                  ABOUT US
-                </Link>
-              </li>
+              <details className="dropdown dropdown-bottom">
+                <summary className="text-lg p-2 pe-3 ps-3 rounded-lg flex items-center gap-1 hover:bg-amber-300 "> About us <FiChevronDown /></summary>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-sm w-56"
+                >
+                  <li className=" font-semibold text-sm hover:bg-amber-300 rounded-sm">
+                    <Link href="/history">Brief History Profile</Link>
+                  </li>
+                  <li className=" font-semibold text-sm hover:bg-amber-300 rounded-sm">
+                    <Link href="/governing">Governing Body Members</Link>
+                  </li>
+                  <li className=" font-semibold text-sm hover:bg-amber-300 rounded-sm">
+                    <Link href="advisor">Expert Panel of Advisors</Link>
+                  </li>
+                  <li className=" font-semibold text-sm hover:bg-amber-300 rounded-sm">
+                    <Link href="/team">Core Team</Link>
+                  </li>
+                  <li className=" font-semibold text-sm hover:bg-amber-300 rounded-sm">
+                    <Link href="/mission">Mission & Vision</Link>
+                  </li>
+                  <li className=" font-semibold text-sm hover:bg-amber-300 rounded-sm">
+                    <Link href="/aim">Aims & Objectives</Link>
+                  </li>
+                  <li className=" font-semibold text-sm hover:bg-amber-300 rounded-sm">
+                    <Link href="/gallery">Gallery</Link>
+                  </li>
+                </ul>
+              </details>
               <li>
                 <Link
                   href="/innovation"
-                  className="text-md flex hover:bg-amber-300 "
+                  className="text-lg flex hover:bg-amber-300 "
                 >
                   Innovation
                 </Link>
@@ -65,16 +111,26 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/training"
-                  className="text-md flex hover:bg-amber-300 "
+                  className="text-lg flex hover:bg-amber-300 "
                 >
                   Training
                 </Link>
               </li>
 
+              <Link href="/" className="rounded-full shadow-sm p-2 w-16">
+                <Image
+                  className=" "
+                  src={logo}
+                  width="auto"
+                  height="auto"
+                  alt="logo"
+                />
+              </Link>
+
               <li>
                 <Link
                   href="/research"
-                  className="text-md flex hover:bg-amber-300 "
+                  className="text-lg flex hover:bg-amber-300 "
                 >
                   Research
                 </Link>
@@ -82,7 +138,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/incubation"
-                  className="text-md flex hover:bg-amber-300 "
+                  className="text-lg flex hover:bg-amber-300 "
                 >
                   Incubation
                 </Link>
@@ -90,9 +146,17 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/contact"
-                  className="text-md flex hover:bg-amber-300"
+                  className="text-lg flex hover:bg-amber-300"
                 >
-                  CONTACT US
+                  Contact us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/certificate"
+                  className="text-lg flex hover:bg-amber-300"
+                >
+                  Certificate
                 </Link>
               </li>
             </ul>

@@ -60,13 +60,13 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
             key={item.id}
-            className=" flex flex-col md:flex-row items-center bg-indigo-950 p-5 rounded-md"
+            className="  items-center bg-indigo-950 p-5 rounded-md"
           >
             <div className="text-2xl z-10 text-white font-bol">{item.title}</div>
             <Image
               alt="img"
               src={item.photo}
-              className=" h-96 rounded-lg object-fill"
+              className=" h-screen rounded-lg object-fill"
             />
           </motion.div>
         ))}

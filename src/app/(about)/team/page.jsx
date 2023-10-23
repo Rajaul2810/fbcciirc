@@ -34,7 +34,7 @@ const Team = () => {
   return (
     <section className=" pt-5 pb-5 bg-amber-50">
       <div className=" flex justify-center">
-        <h1 className=" bg-amber-300 p-5 font-bold w-11/12 md:w-10/12">
+        <h1 className=" bg-amber-300 p-5 font-bold w-11/12 md:w-10/12 text-black">
           Core Team
         </h1>
       </div>
@@ -67,7 +67,7 @@ const Team = () => {
           {teams.map((item) => (
             <div
               key={item.id}
-              className=" bg-white shadow-md hover:shadow-md rounded-md transition duration-150 hover:scale-105"
+              className=" bg-white shadow-md hover:shadow-md rounded-md transition duration-150 hover:scale-105 w-72"
             >
               <div className=" flex justify-center">
                 <Image

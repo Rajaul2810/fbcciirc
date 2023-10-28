@@ -15,7 +15,21 @@ import { CiMail, CiPhone } from "react-icons/ci";
 const Navbar = () => {
   return (
     <>
-      <div className=" bg-amber-500 p-2 flex justify-between">
+      <div className=" bg-indigo-950 p-2 flex justify-between md:pe-10 md:ps-10">
+        <div className=" flex text-white gap-3">
+          <a href="#">
+            <FiFacebook />
+          </a>
+          <a href="#">
+            <FiLinkedin />
+          </a>
+          <a href="#">
+            <FiTwitter />
+          </a>
+          <a href="#">
+            <FiYoutube />
+          </a>
+        </div>
         <div className=" flex gap-2">
           <p className=" text-xs text-white flex items-center font-bold">
             <CiMail />
@@ -25,22 +39,6 @@ const Navbar = () => {
             <CiPhone />
             +8801000000000
           </p>
-        </div>
-        <div className=" flex text-white gap-3">
-          <a href="#">
-            <FiFacebook />
-          </a>
-          <a href="#">
-            <FiLinkedin />
-          </a>
-          <a href="#">
-            {" "}
-            <FiTwitter />
-          </a>
-          <a href="#">
-            {" "}
-            <FiYoutube />
-          </a>
         </div>
       </div>
       <div className="navbar bg-base-100 shadow-lg rounded-sm sticky top-0 z-50">
@@ -72,7 +70,10 @@ const Navbar = () => {
                 </Link>
               </li>
               <details className="dropdown dropdown-bottom">
-                <summary className="text-lg p-2 pe-3 ps-3 rounded-lg flex items-center gap-1 hover:bg-amber-300 "> About us <FiChevronDown /></summary>
+                <summary className="text-lg p-2 pe-3 ps-3 rounded-lg flex items-center gap-1 hover:bg-amber-300 ">
+                  {" "}
+                  About us <FiChevronDown />
+                </summary>
                 <ul
                   tabIndex={0}
                   className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-sm w-56"

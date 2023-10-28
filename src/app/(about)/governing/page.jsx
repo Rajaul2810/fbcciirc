@@ -203,6 +203,8 @@ const Governing = () => {
         <div className=" w-72 md:w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-5 mb-5">
           {governing.map((item) => (
             <div
+            data-aos="fade-up"
+                data-aos-duration="3000"
               key={item.id}
               className=" bg-white shadow-md hover:shadow-md rounded-md transition duration-150 hover:scale-105"
             >

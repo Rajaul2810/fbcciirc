@@ -1,7 +1,7 @@
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
 import './globals.css'
-import { Roboto_Mono,Manrope } from 'next/font/google'
+import { Manrope } from 'next/font/google'
 
 const poppins = Manrope({ 
   subsets: ['latin'],

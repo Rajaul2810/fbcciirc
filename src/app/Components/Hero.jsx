@@ -55,20 +55,19 @@ const Hero = () => {
         infiniteLoop={true}
       >
         {items.map((item) => (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 1 }}
+          <div
             key={item.id}
-            className="  items-center bg-indigo-950 p-5 rounded-md"
+            className="  items-center bg-indigo-950 p-5 rounded-md relative"
           >
-            <div className="text-2xl z-10 text-white font-bol">{item.title}</div>
             <Image
+            data-aos="zoom-in"
               alt="img"
               src={item.photo}
-              className=" h-screen rounded-lg object-fill"
+              className=" h-96 md:h-screen rounded-lg object-fill"
             />
-          </motion.div>
+            <div data-aos="zoom-in" className="text-2xl z-10 text-white font-bold pb-3 absolute bottom-10 md:left-1/4 bg-amber-400 p-2 rounded-md">{item.title}</div>
+          </div>
+          
         ))}
       </Carousel>
     </div>

@@ -57,16 +57,16 @@ const Footer = () => {
                         <Link href="#">
                             <p className="text-gray-400 text-sm hover:text-gray-300 flex items-center"><FiChevronsRight/>FAQ</p>
                         </Link>
-                        <Link href="#">
+                        <Link href="/history">
                             <p className="text-gray-400 text-sm hover:text-gray-300 flex items-center"><FiChevronsRight/>About Us</p>
                         </Link>
-                        <Link href="#">
+                        <Link href="/contact">
                             <p className="text-gray-400 text-sm hover:text-gray-300 flex items-center"><FiChevronsRight/>Contact Us</p>
                         </Link>
-                        <Link href="#">
+                        <Link href="/innovation">
                             <p className="text-gray-400 text-sm hover:text-gray-300 flex items-center"><FiChevronsRight/>Innovation</p>
                         </Link>
-                        <Link href="#">
+                        <Link href="/incubation">
                             <p className="text-gray-400 text-sm hover:text-gray-300 flex items-center"><FiChevronsRight/>Incubation</p>
                         </Link>
                     </div>
@@ -76,16 +76,16 @@ const Footer = () => {
                     <Link href="#">
                         <p className="text-gray-400 text-sm hover:text-gray-300 flex items-center"><FiChevronsRight/>Join Us</p>
                     </Link>
-                    <Link href="#">
+                    <Link href="/training">
                         <p className="text-gray-400 text-sm hover:text-gray-300 flex items-center"><FiChevronsRight/>Training</p>
                     </Link>
-                    <Link href="#">
+                    <Link href="/">
                         <p className="text-gray-400 text-sm hover:text-gray-300 flex items-center"><FiChevronsRight/>Our Partners</p>
                     </Link>
                     <Link href="#">
                         <p className="text-gray-400 text-sm hover:text-gray-300 flex items-center"><FiChevronsRight/>Tech Venture</p>
                     </Link>
-                    <Link href="#">
+                    <Link href="/governing">
                         <p className="text-gray-400 text-sm hover:text-gray-300 flex items-center"><FiChevronsRight/>Governing Body</p>
                     </Link>
                 </div>

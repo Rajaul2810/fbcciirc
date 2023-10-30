@@ -4,13 +4,13 @@ import Marquee from "react-fast-marquee";
 import Image from 'next/image';
 import faction from '../../../public/partner/faction.png'
 import aws from '../../../public/partner/aws.png'
-import bd from '../../../public/partner/bd.png'
 import buet from '../../../public/partner/buet.png'
 import uiu from '../../../public/partner/uiu.png'
 import uncdp from '../../../public/partner/uncdp.png'
 import undp from '../../../public/partner/undp.png'
 import wust from '../../../public/partner/wust.png'
 import accenture from '../../../public/partner/accenture.png'
+import gen from '../../../public/partner/genbd.svg'
 
 const partners = [
   {
@@ -21,7 +21,7 @@ const partners = [
   {
     id:2,
     name:'GEN Bangladesh',
-    photo:bd
+    photo:gen
   },
   {
     id:3,
@@ -64,7 +64,7 @@ const partners = [
 const Partner = () => {
   return (
     <section className=' bg-slate-100 pt-10 pb-10'>
-       <h1 className=" font-bold text-center text-2xl pt-5">
+       <h1 className=" font-extrabold text-center text-2xl pt-5 uppercase">
        Our Potential Partners
         </h1>
         <div className="flex justify-center">
@@ -75,7 +75,7 @@ const Partner = () => {
             partners.map((item)=>
             <div key={item.id} className='p-5 bg-white shadow-md rounded-md m-3'>
               <Image src={item.photo} alt='logo' className=' h-20 w-64'/>
-               <p className=' text-xl font-bold text-center pt-2'>{item.name}</p>
+               <p className=' text-2xl font-bold text-center pt-2'>{item.name}</p>
             </div>
             )
            }
@@ -85,7 +85,7 @@ const Partner = () => {
             partners.map((item)=>
             <div key={item.id} className='p-5 bg-white shadow-md rounded-md m-3'>
               <Image src={item.photo} alt='logo' className=' h-20 w-64'/>
-               <p className=' text-xl font-bold text-center pt-2'>{item.name}</p>
+               <p className=' text-2xl font-bold text-center pt-2'>{item.name}</p>
             </div>
             )
            }

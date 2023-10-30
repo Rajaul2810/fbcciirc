@@ -8,7 +8,7 @@ const History = () => {
       <div className=" w-11/12 grid grid-cols-1 md:grid-cols-2 p-5 place-items-center bg-white shadow-md rounded-md">
         <Image src={logo} alt="logo" className=" h-96 w-full" />
         <div>
-          <h1 className=" text-lg font-bold uppercase bg-amber-300 p-3">
+          <h1 className=" text-lg font-bold uppercase bg-amber-300 p-5">
             Brief History
           </h1>
           <p className=" text-sm text-gray-700 text-justify pt-2 pb-3">

@@ -41,7 +41,7 @@ const Navbar = () => {
           </p>
         </div>
       </div>
-      <div className="navbar bg-base-100 shadow-lg rounded-sm sticky top-0 z-50">
+      <div className="navbar bg-white shadow-lg rounded-sm sticky top-0 z-50">
         <div className="navbar-center">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -62,7 +62,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-60"
             >
               <li>
                 <Link href="/" className=" text-lg flex hover:bg-amber-300 ">
@@ -71,7 +71,6 @@ const Navbar = () => {
               </li>
               <details className="dropdown dropdown-bottom">
                 <summary className="text-lg p-2 pe-3 ps-3 rounded-lg flex items-center gap-1 hover:bg-amber-300 ">
-                  {" "}
                   About us <FiChevronDown />
                 </summary>
                 <ul
@@ -117,17 +116,6 @@ const Navbar = () => {
                   Training
                 </Link>
               </li>
-
-              <Link href="/" className="rounded-full shadow-sm p-2 w-16">
-                <Image
-                  className=" "
-                  src={logo}
-                  width="auto"
-                  height="auto"
-                  alt="logo"
-                />
-              </Link>
-
               <li>
                 <Link
                   href="/research"
@@ -169,6 +157,8 @@ const Navbar = () => {
             <Image src={logo} height={20} width={40} alt="logo" />
           </Link>
         </div>
+
+        {/* dasktop */}
         <div className="navbar hidden lg:flex  lg:items-center lg:justify-center p-0">
           <ul className="menu menu-horizontal">
             <li>
@@ -227,12 +217,12 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <Link href="/" className="rounded-full shadow-sm p-2 w-16">
+            <Link href="/" className="pe-2 ps-2">
               <Image
                 className=" "
                 src={logo}
-                width="auto"
-                height="auto"
+                width={50}
+                height={40}
                 alt="logo"
               />
             </Link>

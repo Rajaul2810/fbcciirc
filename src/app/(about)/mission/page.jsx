@@ -72,7 +72,7 @@ const Mission = () => {
     <section className=" flex justify-center pt-5 pb-5 bg-slate-50">
         <div className=" w-11/12 p-5 bg-white shadow-md rounded-md">
           <section className="">
-            <h1 className=" text-lg font-bold uppercase bg-amber-400 p-3 ">Mission</h1>
+            <h1 className=" text-lg font-bold uppercase bg-amber-300 p-5 ">Mission</h1>
             <p className=" text-sm text-gray-700 text-justify pt-2">
               The mission of the FBCCI Innovation & Research Centre is to serve
               as a non-governmental, non-profit, non-political, and
@@ -112,7 +112,7 @@ const Mission = () => {
             </div>
           </section>
           <section className="pt-5">
-            <h1 className=" text-lg font-bold uppercase bg-amber-400 p-3">Vision</h1>
+            <h1 className=" text-lg font-bold uppercase bg-amber-300 p-5">Vision</h1>
             <p className=" text-sm text-gray-700 text-justify pt-2">
               Our vision is to be a cornerstone of innovation and research in
               Bangladesh. We aspire to establish a dynamic ecosystem of

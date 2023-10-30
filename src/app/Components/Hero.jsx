@@ -57,15 +57,14 @@ const Hero = () => {
         {items.map((item) => (
           <div
             key={item.id}
-            className="  items-center bg-indigo-950 p-5 rounded-md relative"
+            className=" grid grid-cols-1 md:grid-cols-3 bg-indigo-950 p-5 rounded-md place-items-center"
           >
             <Image
-            data-aos="zoom-in"
               alt="img"
               src={item.photo}
-              className=" h-96 md:h-screen rounded-lg object-fill"
+              className=" h-96 w-auto md:h-screen rounded-lg object-fill col-span-2"
             />
-            <div data-aos="zoom-in" className="text-2xl z-10 text-white font-bold pb-3 absolute bottom-10 md:left-1/4 bg-amber-400 p-2 rounded-md">{item.title}</div>
+            <div  className="text-2xl z-10 text-white font-bold p-5">{item.title}</div>
           </div>
           
         ))}

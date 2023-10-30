@@ -38,6 +38,18 @@ const advisors = [
     photo: anisuzzaman,
   },
   {
+    id: "11",
+    name: "Dr. M. Masrur Reaz",
+    designation: " Founder Chairman, Policy Exchange, Bangladesh",
+    photo: reaz,
+  },
+  {
+    id: "10",
+    name: "Mr. Mamun Rashid",
+    designation: " Managing Partner, PwC Bangladesh",
+    photo: rashid,
+  },
+  {
     id: "3",
     name: "Prof. Dr. Syed Akhter Hossain",
     designation:
@@ -82,18 +94,7 @@ const advisors = [
     designation: " Managing Director, Startup Bangladesh Limited",
     photo: sami,
   },
-  {
-    id: "10",
-    name: "Mr. Mamun Rashid",
-    designation: " Managing Partner, PwC Bangladesh",
-    photo: rashid,
-  },
-  {
-    id: "11",
-    name: "Dr. M. Masrur Reaz",
-    designation: " Founder Chairman, Policy Exchange, Bangladesh",
-    photo: reaz,
-  },
+  
   {
     id: "12",
     name: "Mr. Abdul Bari",
@@ -166,7 +167,7 @@ const Advisor = () => {
         <div className=" flex justify-center ">
           <div className="">
             <div className=" flex justify-center">
-              <h1 className=" bg-amber-300 p-5 font-bold w-11/12 md:w-10/12">
+              <h1 className=" bg-amber-300 p-5 font-bold w-11/12 md:w-10/12 uppercase text-lg">
                 Expert Panel of Advisors
               </h1>
             </div>
@@ -183,7 +184,7 @@ const Advisor = () => {
                       <Image
                         src={item.photo}
                         alt="img"
-                        className=" h-52 w-52 rounded-md shadow-sm p-2 bg-white"
+                        className=" h-52 w-52 rounded-md shadow-sm p-2 bg-white object-fill"
                       />
                     </div>
                     <div className="flex-col justify-center p-4">

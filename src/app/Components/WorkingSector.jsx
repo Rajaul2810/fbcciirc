@@ -32,8 +32,8 @@ const sectors = [
 const WorkingSector = () => {
   return (
     <section>
-      <div className="pt-10 pb-10">
-        <h1 className=" font-bold text-center text-2xl pt-5">
+      <div className="pt-10 pb-10 bg-amber-50">
+        <h1 className=" font-extrabold text-center text-2xl pt-5 uppercase">
           Primary Working Sectors
         </h1>
         <div className="flex justify-center">
@@ -56,7 +56,7 @@ const WorkingSector = () => {
                   />
                 </div>
                 <div className="absolute bottom-0 left-0 ">
-                  <p className=" bg-amber-400 text-white p-3 rounded-sm shadow-sm font-bold group-hover:scale-105 duration-150 transition-transform">
+                  <p className=" bg-amber-400 text-black p-3 rounded-sm shadow-sm font-bold group-hover:scale-105 duration-150 transition-transform">
                     {item.title}
                   </p>
                 </div>

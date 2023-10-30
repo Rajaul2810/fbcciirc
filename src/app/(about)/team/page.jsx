@@ -34,7 +34,7 @@ const Team = () => {
   return (
     <section className=" pt-5 pb-5 bg-amber-50">
       <div className=" flex justify-center">
-        <h1 className=" bg-amber-300 p-5 font-bold w-11/12 md:w-10/12 text-black">
+        <h1 className=" bg-amber-300 p-5 font-bold w-11/12 md:w-10/12 text-black uppercase text-lg">
           Core Team
         </h1>
       </div>

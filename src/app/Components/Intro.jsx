@@ -5,11 +5,11 @@ import Image from "next/image";
 const Intro = () => {
   return (
     <section className=" flex justify-center bg-slate-50 pt-10 pb-10">
-      <div className=" w-11/12 grid grid-cols-1 md:grid-cols-2 p-5 place-items-center bg-white shadow-sm rounded-md">
-          <Image src={logo} alt="logo" className=" h-96 w-full"/>
+      <div className=" w-11/12 grid grid-cols-1 md:grid-cols-2 p-5 place-items-center gap-3 bg-white shadow-sm rounded-md">
+          <Image src={logo} alt="logo" className=" h-80 w-80 p-5"/>
         <div>
           <h1 className=" text-lg font-bold uppercase bg-amber-300 p-5 mb-3">Introduction</h1>
-          <p className=" text-sm text-gray-700 text-justify">
+          <p className=" text-md text-gray-700 text-justify">
             FBCCI Innovation and Research Centre (FIRC) stands as a dedicated
             institution, firmly committed to advancing the realms of innovation
             and research within the borders of Bangladesh aiming to collaborate

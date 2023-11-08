@@ -1,4 +1,5 @@
 import React from "react";
+import { BsCheckCircleFill } from "react-icons/bs";
 
 const aims = [
   {
@@ -106,7 +107,7 @@ const Aim = () => {
         <h1 className=" text-lg font-bold uppercase bg-amber-300 p-5">
           AIMS AND OBJECTIVES
         </h1>
-        <p className=" pt-2 text-gray-700 text-justify">
+        <p className=" pt-2 text-gray-700 text-justify pb-3">
           The objects for which the Centre is established shall be the
           following, which will be implemented after obtaining necessary
           permission from the Government / Concerned authority/ competent
@@ -114,27 +115,19 @@ const Aim = () => {
           contrary to the provision of Section 20 of the Act shall be treated as
           ineffective:
         </p>
-        <div className="overflow-x-auto">
-          <table className="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Aims & Objective</th>
-              </tr>
-            </thead>
-            <tbody>
-              {
-                aims.map((item,index)=>
-                <tr key={index} className="hover">
-                <th>{item.id}</th>
-                <td>{item.txt}</td>
-              </tr>
-                )
-              }
-              
-            </tbody>
-          </table>
-        </div>
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5">
+              {aims.map((item, index) => (
+                <div
+                  key={index}
+                  className=" p-4 shadow-md rounded-sm bg-slate-50"
+                >
+                  <p className="bg-white p-2 rounded-full shadow-xl mb-3 w-fit">
+                    <BsCheckCircleFill size={30} className=" text-amber-400" />
+                  </p>
+                  <p className=" text-sm">{item.txt}</p>
+                </div>
+              ))}
+            </div>
       </div>
     </section>
   );

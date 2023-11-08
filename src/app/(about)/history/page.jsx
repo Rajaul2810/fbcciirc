@@ -7,6 +7,7 @@ import {
   FiGlobe,
   FiLayers,
   FiSettings,
+  FiShield,
   FiStar,
   FiTarget,
 } from "react-icons/fi";
@@ -90,34 +91,37 @@ const foucas = [
 
 const strategies = [
   {
-    id:1,
-    title:' Investment climate, opportunities in business/industry/trade and investments'
+    id: 1,
+    title:
+      " Investment climate, opportunities in business/industry/trade and investments",
   },
   {
-    id:2,
-    title:'Areas of comparative and competitive advantages vs others (regional)'
+    id: 2,
+    title:
+      "Areas of comparative and competitive advantages vs others (regional)",
   },
   {
-    id:3,
-    title:'LDC graduation challenges and opportunities'
+    id: 3,
+    title: "LDC graduation challenges and opportunities",
   },
   {
-    id:4,
-    title:'Regional integration and connectivity benefits (India, Myanmar and China)'
+    id: 4,
+    title:
+      "Regional integration and connectivity benefits (India, Myanmar and China)",
   },
   {
-    id:5,
-    title:'China + one opportunities in trade and investment'
+    id: 5,
+    title: "China + one opportunities in trade and investment",
   },
   {
-    id:6,
-    title:' Linking Industry and Academia mechanism for sustainable growth'
+    id: 6,
+    title: " Linking Industry and Academia mechanism for sustainable growth",
   },
   {
-    id:7,
-    title:'4IR adoption and its challenges across the industrial eco-system'
+    id: 7,
+    title: "4IR adoption and its challenges across the industrial eco-system",
   },
-]
+];
 
 const History = () => {
   return (
@@ -136,7 +140,7 @@ const History = () => {
                 and President, FBCCI on chair. Memorandum of Association and
                 Rules and Regulations approved and signed by All GB members.
               </p>
-              <p className=" font-bold">Year of Establishment: 1973</p>
+              <p className=" font-bold">Year of Establishment: 2023</p>
               <p className=" font-bold">
                 Established under: Societies Act 1860
               </p>
@@ -170,53 +174,72 @@ const History = () => {
             </div>
           </section>
           <section className=" p-5">
-            <p className=" font-bold">
+            <p className=" font-bold pb-5">
               Following are some of the core focus areas that an effective
               innovation center will emphasize on:
             </p>
-            <div className="overflow-x-auto">
-              <table className="table">
-                {/* head */}
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                {foucas.map((item, index) => (
-                <div key={index} className="">
-                  <tr>
-                    <th>{item.id}</th>
-                    <td>{item.des}</td>
-                  </tr>
+            <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+              {structure.map((item, index) => (
+                <div
+                  key={index}
+                  className=" bg-amber-200 p-5 rounded-md shadow-sm"
+                >
+                  <div className=" flex justify-center">
+                    <p className=" self-center bg-white p-2 rounded-full shadow-xl mb-3 text-amber-500">
+                      {item.icon}
+                    </p>
+                  </div>
+                  <p className=" text-sm text-justify">{item.des}</p>
                 </div>
               ))}
-                </tbody>
-              </table>
             </div>
           </section>
           <section className=" p-5">
-            <p className=" font-bold pb-5">Effective strategies via dialogue, research and advocacy that will address:</p>
+            <p className=" font-bold pb-5">
+              Effective strategies via dialogue, research and advocacy that will
+              address:
+            </p>
             <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-            {
-              strategies.map((item,index)=>
-                <div key={index} className=" p-4 shadow-md rounded-sm flex items-center bg-slate-50 gap-5">
-                  <p> <FiTarget size={30} className=" text-amber-400"/></p>
-                   <p className=" text-sm">{item.title}</p>
+              {strategies.map((item, index) => (
+                <div
+                  key={index}
+                  className=" p-4 shadow-md rounded-sm flex items-center bg-slate-50 gap-5"
+                >
+                  <p>
+                    <FiShield size={30} className=" text-amber-400" />
+                  </p>
+                  <p className=" text-sm">{item.title}</p>
                 </div>
-              )
-            }
+              ))}
             </div>
           </section>
           <section className=" p-5">
             <p className=" font-bold pb-5">Addition FBCCI-IRC focus:</p>
-             <ul className=" list-disc list-inside">
-              <li>Policy analysis/research/advocacy/dialogue for improved investment opportunities.</li>
-              <li>Build tripartite relationship with FBCCI-IC, Government and private sector (chambers/associations/SME org) in developing effective policies/strategies towards sustainable innovation and research led development.</li>
-              <li>Cross-country analysis, regional business trade and investment developments. Competition Analysis.</li>
-              <li>Assist and support Government with various date driven research work relating to trade, investment, and industry for improved policy planning.</li>
-             </ul>
+            <ul className=" grid grid-cols-1 md:grid-cols-2 gap-5">
+              <li className=" p-4 shadow-md rounded-sm flex items-center bg-slate-50 gap-5">
+               <p> <FiTarget size={30} className=" text-amber-400" /></p>
+                Policy analysis/research/advocacy/dialogue for improved
+                investment opportunities.
+              </li>
+              <li className=" p-4 shadow-md rounded-sm flex items-center bg-slate-50 gap-5">
+              <p> <FiTarget size={30} className=" text-amber-400" /></p>
+                Build tripartite relationship with FBCCI-IC, Government and
+                private sector (chambers/associations/SME org) in developing
+                effective policies/strategies towards sustainable innovation and
+                research led development.
+              </li>
+              <li className=" p-4 shadow-md rounded-sm flex items-center bg-slate-50 gap-5">
+              <p> <FiTarget size={30} className=" text-amber-400" /></p>
+                Cross-country analysis, regional business trade and investment
+                developments. Competition Analysis.
+              </li>
+              <li className=" p-4 shadow-md rounded-sm flex items-center bg-slate-50 gap-5">
+              <p> <FiTarget size={30} className=" text-amber-400" /></p>
+                Assist and support Government with various date driven research
+                work relating to trade, investment, and industry for improved
+                policy planning.
+              </li>
+            </ul>
           </section>
         </div>
       </div>

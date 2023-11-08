@@ -8,6 +8,7 @@ import caro3 from "../../../public/carousel/caro3.jpeg";
 import caro4 from "../../../public/carousel/caro4.jpeg";
 import caro5 from "../../../public/carousel/caro5.jpeg";
 import caro6 from "../../../public/carousel/caro6.jpeg";
+import caro7 from "../../../public/carousel/caro7.jpeg";
 import { motion } from "framer-motion";
 
 const items = [
@@ -42,6 +43,11 @@ const items = [
     title: "Inauguration of Office Floor by Salman F Rahman MP",
     photo: caro6,
   },
+  {
+    id: 7,
+    title: "FBCCI & FBCCI-IRC MoU Signing Ceremony",
+    photo: caro7,
+  },
 ];
 
 const Hero = () => {
@@ -64,7 +70,7 @@ const Hero = () => {
               src={item.photo}
               className=" h-96 w-auto md:h-screen rounded-lg object-fill col-span-2"
             />
-            <div  className="text-2xl z-10 text-white font-bold p-5">{item.title}</div>
+            <div  className={`text-2xl z-10 text-white font-bold p-5`}>{item.title}</div>
           </div>
           
         ))}

@@ -10,6 +10,7 @@ import caro5 from "../../../public/carousel/caro5.jpeg";
 import caro6 from "../../../public/carousel/caro6.jpeg";
 import caro7 from "../../../public/carousel/caro7.jpeg";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const items = [
   {
@@ -51,6 +52,8 @@ const items = [
 ];
 
 const Hero = () => {
+  const [first, setFirst] = useState(0)
+  console.log(first);
   return (
     <div className=" flex justify-center bg-indigo-950 pt-5 pb-5">
       <Carousel
@@ -59,8 +62,9 @@ const Hero = () => {
         showArrows={true}
         showThumbs={false}
         infiniteLoop={true}
+        onChange={(e)=>setFirst(e)}
       >
-        {items.map((item) => (
+        {items.map((item,index) => (
           <div
             key={item.id}
             className=" grid grid-cols-1 md:grid-cols-3 bg-indigo-950 p-5 rounded-md place-items-center"
@@ -70,7 +74,7 @@ const Hero = () => {
               src={item.photo}
               className=" h-96 w-auto md:h-screen rounded-lg object-fill col-span-2"
             />
-            <div  className={`text-2xl z-10 text-white font-bold p-5`}>{item.title}</div>
+            <div  className={`text-2xl z-10 text-white font-bold transition-transform  p-5 ${first===index?'translate-y-0 duration-1000':'translate-y-52'}`}>{item.title}</div>
           </div>
           
         ))}

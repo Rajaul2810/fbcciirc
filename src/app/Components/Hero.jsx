@@ -9,7 +9,6 @@ import caro4 from "../../../public/carousel/caro4.jpeg";
 import caro5 from "../../../public/carousel/caro5.jpeg";
 import caro6 from "../../../public/carousel/caro6.jpeg";
 import caro7 from "../../../public/carousel/caro7.jpeg";
-import { motion } from "framer-motion";
 import { useState } from "react";
 
 const items = [

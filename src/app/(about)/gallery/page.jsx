@@ -21,16 +21,16 @@ import img15 from "../../../../public/gellary/15.jpeg";
 import img16 from "../../../../public/gellary/16.jpeg";
 import img17 from "../../../../public/gellary/17.jpeg";
 import img18 from "../../../../public/gellary/18.jpeg";
-import g1 from "../../../../public/gellary/g1.jpg";
-import g2 from "../../../../public/gellary/g2.jpg";
-import g3 from "../../../../public/gellary/g3.jpg";
+import g1 from "../../../../public/gellary/g1.JPG";
+import g2 from "../../../../public/gellary/g2.JPG";
+import g3 from "../../../../public/gellary/g3.JPG";
 import g4 from "../../../../public/gellary/g4.jpg";
 import g5 from "../../../../public/gellary/g5.jpg";
 import g6 from "../../../../public/gellary/g6.jpg";
 import g7 from "../../../../public/gellary/g7.jpg";
-import g8 from "../../../../public/gellary/g8.jpg";
-import g9 from "../../../../public/gellary/g9.jpg";
-import g10 from "../../../../public/gellary/g10.jpg";
+import g8 from "../../../../public/gellary/g8.JPG";
+import g9 from "../../../../public/gellary/g9.JPG";
+import g10 from "../../../../public/gellary/g10.JPG";
 import s1 from "../../../../public/gellary/s1.jpeg";
 import s2 from "../../../../public/gellary/s2.jpeg";
 import s3 from "../../../../public/gellary/s3.jpeg";
@@ -42,7 +42,6 @@ import f2 from "../../../../public/gellary/f2.jpeg";
 import f3 from "../../../../public/gellary/f3.jpeg";
 import f4 from "../../../../public/gellary/f4.jpeg";
 import f5 from "../../../../public/gellary/f5.jpeg";
-
 
 const images = [
   {
@@ -255,13 +254,18 @@ const images = [
 const Gallery = () => {
   return (
     <div className="py-10 px-10 bg-slate-100">
-      <p className=" text-center font-bold text-3xl pb-5">OUR GALLARY</p>
+      <p className=" text-center font-bold text-3xl ">OUR GALLARY</p>
+      <div className="flex justify-center pb-5">
+        <div className=" h-2 w-32 bg-amber-400 rounded-xl shadow-sm mt-1"></div>
+      </div>
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-        <Masonry gutter="20px" >
+        <Masonry gutter="20px">
           {images.map((image, i) => (
-            <div key={i} className=" bg-white p-5 shadow-sm rounded-md hover:shadow-xl hover:scale-105 duration-150 transition-all group/item" 
-            data-aos="fade-up"
-            data-aos-duration="1000"
+            <div
+              key={i}
+              className=" bg-white p-5 shadow-sm rounded-md hover:shadow-xl hover:scale-105 duration-150 transition-all group/item"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             >
               <Image
                 src={image.link}

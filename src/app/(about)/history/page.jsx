@@ -4,6 +4,7 @@ import Image from "next/image";
 import {
   FiAperture,
   FiAward,
+  FiCheck,
   FiGlobe,
   FiLayers,
   FiSettings,
@@ -127,14 +128,14 @@ const History = () => {
   return (
     <section className="  bg-slate-50 pt-5 pb-5">
       <div className="flex justify-center">
-        <div className="w-11/12 bg-white shadow-md rounded-md">
+        <div className="w-11/12 bg-white shadow-md rounded-md py-5">
           <div className="  grid grid-cols-1 md:grid-cols-2 gap-3 p-5 place-items-center ">
             <Image src={logo} alt="logo" className=" h-72 w-72 p-5" />
             <div>
               <h1 className=" text-lg font-bold uppercase bg-amber-300 p-5">
                 Brief History
               </h1>
-              <p className=" text-md text-gray-700 text-justify pt-2 pb-3">
+              <p className=" text-md text-gray-700 text-justify py-3">
                 First meeting of Governing Body held on 21 June 2023 with Mr Md
                 Jashim Uddin, Chairman of FBCCI Innovation and Research Centre
                 and President, FBCCI on chair. Memorandum of Association and
@@ -142,7 +143,7 @@ const History = () => {
               </p>
               <p className=" font-bold">Year of Establishment: 2023</p>
               <p className=" font-bold">
-                Established under: Societies Act 1860
+                Established under: Societies Act 1860,through RJSC
               </p>
             </div>
           </div>
@@ -157,9 +158,9 @@ const History = () => {
             <p className="mb-5 pt-2">
               To accomplish that, the structure is recommended to be as follows:
             </p>
-            <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+            <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 ">
               {structure.map((item, index) => (
-                <div key={index} className="border-r p-3 border-b">
+                <div key={index} className="border p-5">
                   <div className=" flex justify-center">
                     <p className=" self-center bg-amber-400 p-2 rounded-full shadow-xl ">
                       {item.icon}
@@ -203,12 +204,12 @@ const History = () => {
               {strategies.map((item, index) => (
                 <div
                   key={index}
-                  className=" p-4 shadow-md rounded-sm flex items-center bg-slate-50 gap-5"
+                  className=" p-4 shadow-md rounded-sm flex items-center border gap-5"
                 >
                   <p>
                     <FiShield size={30} className=" text-amber-400" />
                   </p>
-                  <p className=" text-sm">{item.title}</p>
+                  <p className="">{item.title}</p>
                 </div>
               ))}
             </div>
@@ -216,30 +217,297 @@ const History = () => {
           <section className=" p-5">
             <p className=" font-bold pb-5">Addition FBCCI-IRC focus:</p>
             <ul className=" grid grid-cols-1 md:grid-cols-2 gap-5">
-              <li className=" p-4 shadow-md rounded-sm flex items-center bg-slate-50 gap-5">
-               <p> <FiTarget size={30} className=" text-amber-400" /></p>
+              <li className=" p-4 shadow-md rounded-sm flex items-center border gap-5">
+                <p>
+                  <FiTarget size={30} className=" text-amber-400" />
+                </p>
                 Policy analysis/research/advocacy/dialogue for improved
                 investment opportunities.
               </li>
-              <li className=" p-4 shadow-md rounded-sm flex items-center bg-slate-50 gap-5">
-              <p> <FiTarget size={30} className=" text-amber-400" /></p>
+              <li className=" p-4 shadow-md rounded-sm flex items-center border gap-5">
+                <p>
+                  {" "}
+                  <FiTarget size={30} className=" text-amber-400" />
+                </p>
                 Build tripartite relationship with FBCCI-IC, Government and
                 private sector (chambers/associations/SME org) in developing
                 effective policies/strategies towards sustainable innovation and
                 research led development.
               </li>
-              <li className=" p-4 shadow-md rounded-sm flex items-center bg-slate-50 gap-5">
-              <p> <FiTarget size={30} className=" text-amber-400" /></p>
+              <li className=" p-4 shadow-md rounded-sm flex items-center border gap-5">
+                <p>
+                  {" "}
+                  <FiTarget size={30} className=" text-amber-400" />
+                </p>
                 Cross-country analysis, regional business trade and investment
                 developments. Competition Analysis.
               </li>
-              <li className=" p-4 shadow-md rounded-sm flex items-center bg-slate-50 gap-5">
-              <p> <FiTarget size={30} className=" text-amber-400" /></p>
+              <li className=" p-4 shadow-md rounded-sm flex items-center border gap-5">
+                <p>
+                  {" "}
+                  <FiTarget size={30} className=" text-amber-400" />
+                </p>
                 Assist and support Government with various date driven research
                 work relating to trade, investment, and industry for improved
                 policy planning.
               </li>
             </ul>
+          </section>
+          <section className=" py-5">
+            <p className=" text-2xl font-bold text-center">FBCCI-IRC Board</p>
+            <p className=" text-center">
+              The total proposed members are 13 persons including Chairman.
+            </p>
+            <div className="overflow-x-auto px-5 md:px-20 py-5">
+              <table className="table">
+                {/* head */}
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Title</th>
+                    <th>Member</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {/* row 1 */}
+                  <tr className="hover">
+                    <td>Chairman</td>
+                    <td>President of FBCCI (Ex-officio)</td>
+                    <td>1</td>
+                  </tr>
+                  {/* row 2 */}
+                  <tr className="hover">
+                    <td>Members</td>
+                    <td>Sr. Vice President, FBCCI</td>
+                    <td>1</td>
+                  </tr>
+                  <tr className="hover">
+                    <td>Members</td>
+                    <td>FBCCI</td>
+                    <td>5</td>
+                  </tr>
+                  <tr className="hover">
+                    <td>Nominated Members</td>
+                    <td>President-selected chambers/Association</td>
+                    <td>2</td>
+                  </tr>
+                  <tr className="hover">
+                    <td>Nominated Members</td>
+                    <td>
+                      Reps from of partner Org/Universities/Government agencies
+                    </td>
+                    <td>2</td>
+                  </tr>
+                  <tr className="hover">
+                    <td>Nominated Members</td>
+                    <td>Various partners, Think-Thanks</td>
+                    <td>2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section className="py-5 px-5">
+            <div>
+              <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5">
+                <div className="p-5 border rounded-md shadow-sm">
+                  <p className=" text-center font-bold">
+                    Secretary: FBCCI-IRC CEO
+                  </p>
+                  <p className=" text-center">Functions</p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Overall policy directions
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Review of progress and
+                    achievements
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Selection of issues to route to
+                    Strategy Committee
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Strategy Committee meetings and
+                    agendas
+                  </p>
+                </div>
+                <div className="p-5 border rounded-md shadow-sm">
+                  <p className=" text-center font-bold">
+                    Strategic Operations Unit (SOU)
+                  </p>
+                  <p className=" text-center">Functions</p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Secretariat to FBCCI-IC
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Secretariat to the Board of
+                    FBCCI-IC
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> HR, Finance and Administration for
+                    FBCCI-IC
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Monitoring and evaluation
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Policy and strategic
+                    implementation
+                  </p>
+                </div>
+                <div className="p-5 border rounded-md shadow-sm">
+                  <p className=" text-center font-bold">
+                    Innovation & Research Wing
+                  </p>
+                  <p className=" text-center">Functions</p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" />
+                    Conducting private sector research on various issues
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Build a bridge between industry
+                    and academia
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Creating links between research
+                    and business
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" />
+                    Conducting various regulatory impact analyses
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Reviewing administrative barriers
+                    & other diagnostic research to support dialogue.
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Conducting analysis of business
+                    regulations impacting investments.
+                  </p>
+                </div>
+                <div className="p-5 border rounded-md shadow-sm">
+                  <p className=" text-center font-bold">
+                    Dialogue Wing & Advocacy Wing
+                  </p>
+                  <p className=" text-center">Functions</p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" />
+                    Formulation of and secretariat to Working Committees
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Selection of facilitators, members
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" />
+                    Coordination of follow-up research by the research wing on
+                    issues identified by WCs
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" />
+                    Tracking of recommendations and implementation
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Coordinate all FBCCI-IC
+                    communications.
+                  </p>
+                  <p className=" flex items-center gap-2">
+                    <FiCheck color="green" /> Design and implement communication
+                    and advocacy strategies around issues arising from research
+                    and around the reform agenda.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr />
+          <section className=" py-5">
+            <p className=" text-2xl font-bold text-center">
+              Membership Categories
+            </p>
+               <div className=" flex justify-center py-5">
+               <div className=" flex gap-5">
+                <p className=" bg-indigo-500 text-white font-bold px-3 py-2">1. Founder Members</p>
+                <p className=" bg-indigo-500 text-white font-bold px-3 py-2"> 2. Life Members</p>
+                <p className=" bg-indigo-500 text-white font-bold px-3 py-2"> 3. Corporate Members</p>
+                <p className=" bg-indigo-500 text-white font-bold px-3 py-2">4. Honorary Members</p>
+               </div>
+               </div>
+               <p className=" text-center">The Centre shall have two constitutional bodies:</p>
+            <div className="overflow-x-auto px-5 md:px-20 py-5">
+              <table className="table">
+                {/* head */}
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>General Body</th>
+                    <th>Governing Body</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {/* row 1 */}
+                  <tr className="hover">
+                    <th>1</th>
+                    <td>
+                      The General Body shall be comprised of the Founder Members
+                      and Life Members having the right to vote
+                    </td>
+                    <td>
+                      The Governing Body will be elected/ selected by the
+                      General Body and will remain in office for a term of three
+                      (3) years from the date of their selection/election
+                    </td>
+                  </tr>
+                  <tr className="hover">
+                    <th>2</th>
+                    <td>
+                      General Body shall elect the Governing Body, after the
+                      expiry of the first Governing Body every three years.
+                    </td>
+                    <td>
+                      Under special circumstances tenure of the Governing Body
+                      can be extended by the General Body but not more than six
+                      months.
+                    </td>
+                  </tr>
+                  <tr className="hover">
+                    <th>3</th>
+                    <td>
+                      General Body through the AGM shall approve the budget and
+                      action plan every year.
+                    </td>
+                    <td>
+                      The Governing Body shall be responsible for staff
+                      management and implementing the programs in accordance
+                      with the action plan approved by the General Body
+                    </td>
+                  </tr>
+                  <tr className="hover">
+                    <th>4</th>
+                    <td>
+                      The General Body through the Annual General Meeting every
+                      year shall appoint the auditors or delegate the power to
+                      the Governing Body of appointing auditors or auditing the
+                      organizations accounts and approve the audit report every
+                      year.
+                    </td>
+                    <td>
+                      The Governing Body shall function as the supreme executive
+                      authority of the organization and shall be accountable
+                      only to the General Body for its acts and decisions.
+                    </td>
+                  </tr>
+                  <tr className="hover">
+                    <th>5</th>
+                    <td>
+                    The General Body shall normally meet once a year.
+                    </td>
+                    <td>
+                    The Governing Body shall normally meet every meeting.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
         </div>
       </div>

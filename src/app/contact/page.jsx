@@ -6,7 +6,7 @@ import zbg from '../../../public/zbg.jpg';
 
 const Contact = () => {
     return (
-        <section className=" bg-amber-50 ">
+        <section className=" bg-amber-50">
             <div className=' flex justify-center items-center pt-10 pb-10'>
                 <div className='w-11/12 md:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-2 place-items-center '>
                     <div className='pb-5'>

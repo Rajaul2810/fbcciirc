@@ -9,8 +9,11 @@ import uiu from '../../../public/partner/uiu.png'
 import uncdp from '../../../public/partner/uncdp.png'
 import undp from '../../../public/partner/undp.png'
 import wust from '../../../public/partner/wust.png'
-import accenture from '../../../public/partner/accenture.png'
 import gen from '../../../public/partner/genbd.svg'
+import accenture from '../../../public/partner/accenture.png'
+import cmsf from '../../../public/partner/cmsf.png'
+import nijer from '../../../public/partner/nij.png'
+import microsoft from '../../../public/partner/microsoft.png'
 
 const partners = [
   {
@@ -58,6 +61,21 @@ const partners = [
     name:'ACCENTURE',
     photo:accenture
   },
+  {
+    id:10,
+    name:'CMSF',
+    photo:cmsf
+  },
+  {
+    id:11,
+    name:'Nijer Bolar Moto Ekta Golpo Foundation',
+    photo:nijer
+  },
+  {
+    id:12,
+    name:'Microsoft',
+    photo:microsoft
+  },
 ]
 
 
@@ -67,14 +85,14 @@ const Partner = () => {
        <h1 className=" font-extrabold text-center text-2xl pt-5 uppercase">
        Our Potential Partners
         </h1>
-        <div className="flex justify-center">
+        <div className="flex justify-center pb-5">
           <div className=" h-2 w-32 bg-amber-400 rounded-xl shadow-sm mt-1"></div>
         </div>
         <Marquee speed={40} className=' mt-2 mb-2'>
            {
             partners.map((item)=>
             <div key={item.id} className='p-5 bg-white shadow-md rounded-md m-3'>
-              <Image src={item.photo} alt='logo' className=' h-20 w-64'/>
+              <Image src={item.photo} alt='logo' className=' h-20 w-48'/>
                <p className=' text-2xl font-bold text-center pt-2'>{item.name}</p>
             </div>
             )

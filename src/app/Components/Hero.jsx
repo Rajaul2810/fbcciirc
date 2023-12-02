@@ -52,7 +52,6 @@ const items = [
 
 const Hero = () => {
   const [first, setFirst] = useState(0)
-  console.log(first);
   return (
     <div className=" flex justify-center bg-indigo-950 pt-5 pb-5">
       <Carousel

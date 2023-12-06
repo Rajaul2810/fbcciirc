@@ -17,7 +17,7 @@ const Navbar = () => {
     <>
       <div className=" bg-indigo-950 p-2 flex justify-between md:pe-10 md:ps-10">
         <div className=" flex text-white gap-3">
-          <a href="#">
+          <a href="https://www.facebook.com/profile.php?id=61552477311564&mibextid=ZbWKwL" target="_blank">
             <FiFacebook />
           </a>
           <a href="#">
@@ -108,14 +108,7 @@ const Navbar = () => {
                   Innovation
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/training"
-                  className="text-lg flex hover:bg-amber-300 "
-                >
-                  Training
-                </Link>
-              </li>
+              
               <li>
                 <Link
                   href="/research"
@@ -130,6 +123,14 @@ const Navbar = () => {
                   className="text-lg flex hover:bg-amber-300 "
                 >
                   Incubation
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/training"
+                  className="text-lg flex hover:bg-amber-300 "
+                >
+                  Training
                 </Link>
               </li>
               <li>
@@ -210,12 +211,13 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/training"
+                href="/research"
                 className="text-lg flex hover:bg-amber-300 "
               >
-                Training
+                Research
               </Link>
             </li>
+            
 
             <Link href="/" className="pe-2 ps-2">
               <Image
@@ -227,20 +229,21 @@ const Navbar = () => {
               />
             </Link>
 
-            <li>
-              <Link
-                href="/research"
-                className="text-lg flex hover:bg-amber-300 "
-              >
-                Research
-              </Link>
-            </li>
+            
             <li>
               <Link
                 href="/incubation"
                 className="text-lg flex hover:bg-amber-300 "
               >
                 Incubation
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/training"
+                className="text-lg flex hover:bg-amber-300 "
+              >
+                Training
               </Link>
             </li>
             <li>

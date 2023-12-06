@@ -9,6 +9,7 @@ import caro4 from "../../../public/carousel/caro4.jpeg";
 import caro5 from "../../../public/carousel/caro5.jpeg";
 import caro6 from "../../../public/carousel/caro6.jpeg";
 import caro7 from "../../../public/carousel/caro7.jpeg";
+import car from "../../../public/carousel/car.jpg";
 import { useState } from "react";
 
 const items = [
@@ -47,6 +48,11 @@ const items = [
     id: 7,
     title: "FBCCI & FBCCI-IRC MoU Signing Ceremony",
     photo: caro7,
+  },
+  {
+    id: 8,
+    title: "FBCCI & FBCCI-IRC MoU Signing Ceremony",
+    photo: car,
   },
 ];
 

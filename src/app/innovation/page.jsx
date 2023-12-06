@@ -1,8 +1,8 @@
 import React from "react";
 import { FiBox, FiCrosshair, FiPackage } from "react-icons/fi";
 import Image from "next/image";
-import innov2 from "../../../public/others/innov2.jpg";
-import innov from "../../../public/others/innov.jpg";
+import innov2 from "../../../public/others/inno.svg";
+import innov from "../../../public/others/innov2.jpg";
 import innov3 from "../../../public/others/innov3.jpg";
 
 const sz = 25;
@@ -35,7 +35,7 @@ const Innovation = () => {
           Innovation
         </p>
         <div className=" grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center py-10 px-5">
-          <Image src={innov2} alt="" />
+          <Image src={innov2} alt="" className=" h-96 w-auto" />
           <div>
             <p className=" text-justify pb-5 text-lg">
               Business innovation is the act of introducing something new to a
@@ -52,7 +52,7 @@ const Innovation = () => {
         </div>
         <hr />
         <div className=" row-span-1">
-          <p className=" py-5 font-bold text-lg">
+          <p className=" py-5 font-bold text-lg text-center">
             Models of Business Innovation
           </p>
           <p>
@@ -87,70 +87,76 @@ const Innovation = () => {
         <p className=" font-bold text-xl py-5 text-center">
           Why is Innovation Important for Businesses
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center py-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center py-10 lg:px-10">
           <div>
-            <Image src={innov} alt="" />
+            <Image src={innov} alt="" className="" />
           </div>
           <div>
-            <p className=" text-justify">
-              Innovation helps grow business. Business growth means, ultimately,
-              increasing your profits. Successful innovation allows you to add
-              value to your business so that you can increase your profits—if
-              you don’t innovate well, your business will plateau
-            </p>
-            <p className=" text-justify py-2">
-              Innovation helps a country/sector ahead of the competition. With
-              globalization and a rapidly changing market, there are more
-              competing businesses than ever before. Innovative thinking can
-              help predict the market and keep up with customer needs. If
-              business doesn’t innovate, other innovative companies bring new
-              ideas to the marketplace, and you’ll have to scramble to keep up.
-            </p>
-            <p className=" text-justify">
-              Innovation helps take advantage of new technologies. Technology
-              (and especially artificial intelligence) is evolving faster than
-              ever before, which means that there may be new, more efficient
-              technologies to make better products, to offer your services, to
-              market your business, or to track your performance with analytics.
-              By taking advantage of these new technologies for process
-              innovation, you’ll be able to optimize your business and gain a
-              competitive advantage over your competitors.
-            </p>
+            <ul className=" list-outside list-disc ps-5">
+              <li className=" text-justify ">
+                Innovation helps grow business. Business growth means,
+                ultimately, increasing your profits. Successful innovation
+                allows you to add value to your business so that you can
+                increase your profits—if you don’t innovate well, your business
+                will plateau
+              </li>
+              <li className=" text-justify py-5 ">
+                Innovation helps a country/sector ahead of the competition. With
+                globalization and a rapidly changing market, there are more
+                competing businesses than ever before. Innovative thinking can
+                help predict the market and keep up with customer needs. If
+                business doesn’t innovate, other innovative companies bring new
+                ideas to the marketplace, and you’ll have to scramble to keep
+                up.
+              </li>
+              <li className=" text-justify ">
+                Innovation helps take advantage of new technologies. Technology
+                (and especially artificial intelligence) is evolving faster than
+                ever before, which means that there may be new, more efficient
+                technologies to make better products, to offer your services, to
+                market your business, or to track your performance with
+                analytics. By taking advantage of these new technologies for
+                process innovation, you’ll be able to optimize your business and
+                gain a competitive advantage over your competitors.
+              </li>
+            </ul>
           </div>
-          <div className=" pt-10">
-            <p className=" text-justify">
-              Reinforce Brand – Development branding is popular in
-              organizational leadership. This process reveals information to
-              help leaders to learn other ways to be more innovative. It is
-              important because it is recognized as one of the main drivers for
-              success. It gives organizational sustainability such as brand
-              maintenance.
-            </p>
-            <p className=" text-justify py-2">
-              Making the Most of What You Have Already – It is not all about
-              creating a new product or service which you can sell, but you also
-              need to focus on your existing business procedures to improve your
-              efficiency, find some new customers, increase your profits and cut
-              down on the amount of your waste. When you are continually
-              innovating and improving on the practices of your business you
-              will likely also attract better staff and keep more of your
-              existing staff. This is detrimental to the health and performance
-              of your business in the long-term.
-            </p>
-            <p className=" text-justify">
-              Responding to Competition and Trends – Innovation can help you to
-              see what exists now in opportunities or which ones will likely pop
-              up in the near future. Businesses which are successful don’t only
-              respond to the current needs of their customers, but usually
-              predict the future trends and come up with an idea, service or
-              product that can meet the future demand quickly and effectively.
-              In this way you can stay ahead of your competition as trends,
-              technology or markets shift.
-            </p>
+          <div className=" py-10 pt-20">
+            <ul className=" list-disc list-outside">
+              <li className=" text-justify">
+                Reinforce Brand – Development branding is popular in
+                organizational leadership. This process reveals information to
+                help leaders to learn other ways to be more innovative. It is
+                important because it is recognized as one of the main drivers
+                for success. It gives organizational sustainability such as
+                brand maintenance.
+              </li>
+              <li className=" text-justify py-5">
+                Making the Most of What You Have Already – It is not all about
+                creating a new product or service which you can sell, but you
+                also need to focus on your existing business procedures to
+                improve your efficiency, find some new customers, increase your
+                profits and cut down on the amount of your waste. When you are
+                continually innovating and improving on the practices of your
+                business you will likely also attract better staff and keep more
+                of your existing staff. This is detrimental to the health and
+                performance of your business in the long-term.
+              </li>
+              <li className=" text-justify">
+                Responding to Competition and Trends – Innovation can help you
+                to see what exists now in opportunities or which ones will
+                likely pop up in the near future. Businesses which are
+                successful don’t only respond to the current needs of their
+                customers, but usually predict the future trends and come up
+                with an idea, service or product that can meet the future demand
+                quickly and effectively. In this way you can stay ahead of your
+                competition as trends, technology or markets shift.
+              </li>
+            </ul>
           </div>
           <div>
             <div>
-              <Image src={innov3} alt="" />
+              <Image src={innov3} alt="" className=" h-96 w-auto" />
             </div>
           </div>
         </div>

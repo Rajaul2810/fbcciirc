@@ -8,6 +8,7 @@ import {
 } from "react-icons/fi";
 import Image from "next/image";
 import training from "../../../public/others/training.jpg";
+import train from "../../../public/others/train.svg";
 
 const sz = 25;
 const trainings = [
@@ -51,7 +52,7 @@ const Training = () => {
           Training
         </p>
         <div className=" grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center py-10">
-          <Image src={training} alt="" />
+          <Image src={train} alt="" />
           <div>
             <p className=" text-justify pb-5 text-lg">
               Training is a structured process of imparting specific skills or
@@ -97,25 +98,31 @@ const Training = () => {
             ))}
           </div>
         </div>
-        <div className="">
-          <p className=" font-bold text-lg pb-3">
-            How to choose the right type of training
-          </p>
-          <p className=" text-justify text-lg">
-            The best type of training for a particular situation will depend on
-            a number of factors, such as the needs of the employees, the
-            resources available, and the time constraints. It is important to
-            carefully consider all of these factors before choosing a training
-            program.
-          </p>
-          <p className=" text-justify text-lg py-2">
-            Training is an essential investment for individuals and
-            organizations alike. It can help to improve skills, knowledge,
-            productivity, quality, customer satisfaction, and employee
-            engagement. By choosing the right type of training and delivering it
-            effectively, organizations can reap the many benefits that
-            training has to offer.
-          </p>
+        <hr />
+        <div className=" grid grid-cols-1 md:grid-cols-2 place-items-center gap-5 py-10">
+          <div>
+            <Image src={training} alt="train" className=" h-96 w-auto"/>
+          </div>
+          <div>
+            <p className=" font-bold text-xl pb-3 text-center">
+              How to choose the right type of training
+            </p>
+            <p className=" text-justify text-lg">
+              The best type of training for a particular situation will depend
+              on a number of factors, such as the needs of the employees, the
+              resources available, and the time constraints. It is important to
+              carefully consider all of these factors before choosing a training
+              program.
+            </p>
+            <p className=" text-justify text-lg py-5">
+              Training is an essential investment for individuals and
+              organizations alike. It can help to improve skills, knowledge,
+              productivity, quality, customer satisfaction, and employee
+              engagement. By choosing the right type of training and delivering
+              it effectively, organizations can reap the many benefits that
+              training has to offer.
+            </p>
+          </div>
         </div>
       </div>
     </section>

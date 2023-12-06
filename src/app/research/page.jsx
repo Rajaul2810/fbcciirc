@@ -1,7 +1,7 @@
 import React from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import Image from "next/image";
-import rec from "../../../public/others/re.jpg";
+import rec from "../../../public/others/re.svg";
 import {
   Bs1CircleFill,
   Bs2CircleFill,
@@ -136,8 +136,8 @@ const Research = () => {
         <p className=" bg-amber-300 p-5 text-lg uppercase font-bold my-3">
           Research
         </p>
-        <div className=" grid grid-cols-1 md:grid-cols-3 gap-5 place-items-center py-10 px-5">
-          <Image src={rec} alt="" className=" col-span-2"/>
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center py-10 px-5">
+          <Image src={rec} alt="" className=""/>
           <div>
             <p className=" text-xl font-bold">Business Research</p>
             <p className=" text-justify py-4 text-lg">

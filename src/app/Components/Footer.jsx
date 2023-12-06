@@ -19,7 +19,7 @@ const Footer = () => {
 
                             <li className=' bg-slate-300 p-2 hover:bg-slate-50 shadow-sm rounded-md'>
                                 <a
-                                    href="#"
+                                    href="https://www.facebook.com/profile.php?id=61552477311564&mibextid=ZbWKwL"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className=""

@@ -1,8 +1,7 @@
-"use client"
-import Image from 'next/image'
+
 import React from 'react'
 import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi'
-import zbg from '../../../public/zbg.jpg';
+
 
 const Contact = () => {
     return (

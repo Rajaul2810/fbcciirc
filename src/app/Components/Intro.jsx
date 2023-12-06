@@ -12,17 +12,17 @@ const Intro = () => {
         <div className=" p-5">
           <h1 className=" text-lg font-bold uppercase bg-amber-300 p-5 mb-3">Introduction</h1>
           <p className=" text-md text-gray-700 text-justify pt-5">
-            FBCCI Innovation and Research Centre (FIRC) stands as a dedicated
+            FBCCI Innovation and Research Centre (FBCCI IRC) stands as a dedicated
             institution, firmly committed to advancing the realms of innovation
             and research within the borders of Bangladesh aiming to collaborate
             closely with the government to shape innovation policies and support
             industry-led research initiatives, bridging gaps between various
             sectors for sustainable growth. FBCCI Innovation and Research Centre
-            (FIRC) will be organized to promote Innovation and Research for all
+            (FBCCI IRC) will be organized to promote Innovation and Research for all
             commercial organizations of Bangladesh especially member
-            organizations of FBCCI. FBCCI Innovation and Research Centre (FIRC)
+            organizations of FBCCI. FBCCI Innovation and Research Centre (FBCCI IRC)
             has formed a Panel of Advisors, who will provide advisory support to
-            FIRC on policy advocacy, skill development, education, and social
+            FBCCI IRC on policy advocacy, skill development, education, and social
             welfare initiatives facilitation that will determine the rate and
             direction of technological learning and change, fostering economic
             growth and sustainable development of individuals and societies in

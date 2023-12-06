@@ -138,7 +138,7 @@ const History = () => {
               <p className=" text-md text-gray-700 text-justify py-3">
                 First meeting of Governing Body held on 21 June 2023 with Mr Md
                 Jashim Uddin, Chairman of FBCCI Innovation and Research Centre
-                and President, FBCCI on chair. Memorandum of Association and
+                and Past President, FBCCI on chair. Memorandum of Association and
                 Rules and Regulations approved and signed by All GB members.
               </p>
               <p className=" font-bold">Year of Establishment: 2023</p>
@@ -425,7 +425,7 @@ const History = () => {
               Membership Categories
             </p>
                <div className=" flex justify-center py-5">
-               <div className=" flex gap-5">
+               <div className=" grid grid-cols-2 md:grid-cols-4 gap-5">
                 <p className=" bg-indigo-500 text-white font-bold px-3 py-2">1. Founder Members</p>
                 <p className=" bg-indigo-500 text-white font-bold px-3 py-2"> 2. Life Members</p>
                 <p className=" bg-indigo-500 text-white font-bold px-3 py-2"> 3. Corporate Members</p>

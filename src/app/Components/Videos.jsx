@@ -12,7 +12,7 @@ const Videos = () => {
         <div>
           <button
             onClick={() => setVid(true)}
-            className=" btn btn-circle bg-amber-300 my-10 ms-32 shadow-2xl shadow-amber-100"
+            className=" btn btn-lg btn-circle bg-amber-300 my-10 ms-32 shadow-2xl shadow-amber-100 flex justify-center items-center animate-bounce"
           >
             <FiPlay size={30} />
           </button>

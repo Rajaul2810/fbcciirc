@@ -26,7 +26,7 @@ const items = [
   {
     id: 3,
     title:
-      "Fire Service Mohora held at FBCCI Innovation and Research Centre (FIRC)",
+      "Fire Service Mohora held at FBCCI Innovation and Research Centre (FBCCI IRC)",
     photo: caro4,
   },
   {

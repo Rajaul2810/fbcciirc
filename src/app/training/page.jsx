@@ -99,7 +99,7 @@ const Training = () => {
           </div>
         </div>
         <hr />
-        <div className=" grid grid-cols-1 md:grid-cols-2 place-items-center gap-5 py-10">
+        <div className=" grid grid-cols-1 md:grid-cols-2 place-items-center gap-5 py-10 mx-5 sm:mx-10 md:mx-20">
           <div>
             <Image src={training} alt="train" className=" h-96 w-auto"/>
           </div>

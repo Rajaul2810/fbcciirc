@@ -1,5 +1,5 @@
 import React from "react";
-import { FiBox, FiCrosshair, FiPackage } from "react-icons/fi";
+import { FiBox, FiCheckCircle, FiCrosshair, FiPackage } from "react-icons/fi";
 import Image from "next/image";
 import innov2 from "../../../public/others/inno.svg";
 import innov from "../../../public/others/innov2.jpg";
@@ -27,6 +27,32 @@ const innos = [
   },
 ];
 
+const inadd = [
+  {
+    id:1,
+    des:'Innovation helps grow business. Business growth means, ultimately, increasing your profits. Successful innovation allows you to add value to your business so that you can increase your profits—if you don’t innovate well, your business will plateau'
+  },
+  {
+    id:2,
+    des:'Innovation helps a country/sector ahead of the competition. With globalization and a rapidly changing market, there are more competing businesses than ever before. Innovative thinking can help predict the market and keep up with customer needs. If business doesn’t innovate, other innovative companies bring new ideas to the marketplace, and you’ll have to scramble to keep up.'
+  },
+  {
+    id:3,
+    des:'Innovation helps take advantage of new technologies. Technology (and especially artificial intelligence) is evolving faster than ever before, which means that there may be new, more efficient technologies to make better products, to offer your services, to market your business, or to track your performance with analytics. By taking advantage of these new technologies for process innovation, you’ll be able to optimize your business and gain a competitive advantage over your competitors.'
+  },
+  {
+    id:4,
+    des:'Reinforce Brand – Development branding is popular in organizational leadership. This process reveals information to help leaders to learn other ways to be more innovative. It is important because it is recognized as one of the main drivers for success. It gives organizational sustainability such as brand maintenance.'
+  },
+  {
+    id:5,
+    des:'Making the Most of What You Have Already – It is not all about creating a new product or service which you can sell, but you also need to focus on your existing business procedures to improve your efficiency, find some new customers, increase your profits and cut down on the amount of your waste. When you are continually innovating and improving on the practices of your business you will likely also attract better staff and keep more of your existing staff. This is detrimental to the health and performance of your business in the long-term.'
+  },
+  {
+    id:6,
+    des:'Responding to Competition and Trends – Innovation can help you to see what exists now in opportunities or which ones will likely pop up in the near future. Businesses which are successful don’t only respond to the current needs of their customers, but usually predict the future trends and come up with an idea, service or product that can meet the future demand quickly and effectively. In this way you can stay ahead of your competition as trends, technology or markets shift.'
+  },
+]
 const Innovation = () => {
   return (
     <section className=" bg-slate-100 py-10">
@@ -64,6 +90,7 @@ const Innovation = () => {
         </div>
         <div className=" flex justify-center py-5">
           <div className=" w-11/12 md:w-3/4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+           
             {innos.map((item, i) => (
               <div
                 key={i}
@@ -84,79 +111,27 @@ const Innovation = () => {
           </div>
         </div>
         <hr />
+        
+        <div className="py-5">
         <p className=" font-bold text-xl py-5 text-center">
           Why is Innovation Important for Businesses
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center py-10 lg:px-10">
-          <div>
-            <Image src={innov} alt="" className="" />
-          </div>
-          <div>
-            <ul className=" list-outside list-disc ps-5">
-              <li className=" text-justify ">
-                Innovation helps grow business. Business growth means,
-                ultimately, increasing your profits. Successful innovation
-                allows you to add value to your business so that you can
-                increase your profits—if you don’t innovate well, your business
-                will plateau
-              </li>
-              <li className=" text-justify py-5 ">
-                Innovation helps a country/sector ahead of the competition. With
-                globalization and a rapidly changing market, there are more
-                competing businesses than ever before. Innovative thinking can
-                help predict the market and keep up with customer needs. If
-                business doesn’t innovate, other innovative companies bring new
-                ideas to the marketplace, and you’ll have to scramble to keep
-                up.
-              </li>
-              <li className=" text-justify ">
-                Innovation helps take advantage of new technologies. Technology
-                (and especially artificial intelligence) is evolving faster than
-                ever before, which means that there may be new, more efficient
-                technologies to make better products, to offer your services, to
-                market your business, or to track your performance with
-                analytics. By taking advantage of these new technologies for
-                process innovation, you’ll be able to optimize your business and
-                gain a competitive advantage over your competitors.
-              </li>
-            </ul>
-          </div>
-          <div className=" py-10 pt-20">
-            <ul className=" list-disc list-outside">
-              <li className=" text-justify">
-                Reinforce Brand – Development branding is popular in
-                organizational leadership. This process reveals information to
-                help leaders to learn other ways to be more innovative. It is
-                important because it is recognized as one of the main drivers
-                for success. It gives organizational sustainability such as
-                brand maintenance.
-              </li>
-              <li className=" text-justify py-5">
-                Making the Most of What You Have Already – It is not all about
-                creating a new product or service which you can sell, but you
-                also need to focus on your existing business procedures to
-                improve your efficiency, find some new customers, increase your
-                profits and cut down on the amount of your waste. When you are
-                continually innovating and improving on the practices of your
-                business you will likely also attract better staff and keep more
-                of your existing staff. This is detrimental to the health and
-                performance of your business in the long-term.
-              </li>
-              <li className=" text-justify">
-                Responding to Competition and Trends – Innovation can help you
-                to see what exists now in opportunities or which ones will
-                likely pop up in the near future. Businesses which are
-                successful don’t only respond to the current needs of their
-                customers, but usually predict the future trends and come up
-                with an idea, service or product that can meet the future demand
-                quickly and effectively. In this way you can stay ahead of your
-                competition as trends, technology or markets shift.
-              </li>
-            </ul>
-          </div>
-          <div>
-            <div>
-              <Image src={innov3} alt="" className=" h-96 w-auto" />
+          <div className=" flex justify-center py-5">
+            <div className=" w-11/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <Image src={innov3} alt="" className=" md:col-span-2 md:row-span-1"/>
+              {inadd.map((item, i) => (
+                <div
+                  key={i}
+                  className=" rounded-md bg-white p-5 hover:bg-green-100 mt-5 border shadow-sm"
+                >
+                  <div className=" flex  justify-center -mt-10">
+                    <p className="bg-green-400 text-white p-3 rounded-full shadow-xl ">
+                      <FiCheckCircle/>
+                    </p>
+                  </div>
+                  <p className=" text-justify pt-5">{item.des}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

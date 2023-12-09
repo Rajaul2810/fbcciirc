@@ -175,9 +175,9 @@ const History = () => {
             </div>
           </section>
           <section className=" p-5">
-            <p className=" font-bold pb-5">
+            <p className=" font-bold pb-5 text-center">
               Following are some of the core focus areas that an effective
-              innovation center will emphasize on:
+              innovation centre will emphasize on:
             </p>
             <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
               {structure.map((item, index) => (
@@ -196,7 +196,7 @@ const History = () => {
             </div>
           </section>
           <section className=" p-5">
-            <p className=" font-bold pb-5">
+            <p className=" font-bold pb-5 text-center">
               Effective strategies via dialogue, research and advocacy that will
               address:
             </p>
@@ -215,7 +215,7 @@ const History = () => {
             </div>
           </section>
           <section className=" p-5">
-            <p className=" font-bold pb-5">Addition FBCCI-IRC focus:</p>
+            <p className=" font-bold pb-5 text-center">Addition FBCCI-IRC focus:</p>
             <ul className=" grid grid-cols-1 md:grid-cols-2 gap-5">
               <li className=" p-4 shadow-md rounded-sm flex items-center border gap-5">
                 <p>
@@ -226,7 +226,7 @@ const History = () => {
               </li>
               <li className=" p-4 shadow-md rounded-sm flex items-center border gap-5">
                 <p>
-                  {" "}
+
                   <FiTarget size={30} className=" text-amber-400" />
                 </p>
                 Build tripartite relationship with FBCCI-IC, Government and
@@ -236,7 +236,7 @@ const History = () => {
               </li>
               <li className=" p-4 shadow-md rounded-sm flex items-center border gap-5">
                 <p>
-                  {" "}
+
                   <FiTarget size={30} className=" text-amber-400" />
                 </p>
                 Cross-country analysis, regional business trade and investment
@@ -244,7 +244,7 @@ const History = () => {
               </li>
               <li className=" p-4 shadow-md rounded-sm flex items-center border gap-5">
                 <p>
-                  {" "}
+
                   <FiTarget size={30} className=" text-amber-400" />
                 </p>
                 Assist and support Government with various date driven research

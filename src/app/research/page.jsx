@@ -178,7 +178,7 @@ const Research = () => {
         <hr />
         <div className="py-5">
           <p className=" font-bold text-xl pb-3 text-center">
-            Why is Innovation Important for Businesses
+            Why is Research Important for Businesses
           </p>
           <div className=" flex justify-center py-5">
             <div className=" w-11/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

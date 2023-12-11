@@ -10,7 +10,6 @@ import uncdp from '../../../public/partner/uncdp.png'
 import undp from '../../../public/partner/undp.png'
 import wust from '../../../public/partner/wust.png'
 import gen from '../../../public/partner/genbd.svg'
-import accenture from '../../../public/partner/accenture.png'
 import cmsf from '../../../public/partner/cmsf.png'
 import nijer from '../../../public/partner/nij.png'
 import microsoft from '../../../public/partner/microsoft.png'
@@ -55,11 +54,6 @@ const partners = [
     id:8,
     name:'UIU',
     photo:uiu
-  },
-  {
-    id:9,
-    name:'ACCENTURE',
-    photo:accenture
   },
   {
     id:10,

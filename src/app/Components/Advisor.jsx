@@ -7,6 +7,7 @@ import anindya from "../../../public/advisor/anindya.jpg";
 import anisuzzaman from "../../../public/advisor/anisuzzaman.png";
 import arefe from "../../../public/advisor/arefe.jpg";
 import bari from "../../../public/advisor/bari.png";
+import khandakar from "../../../public/advisor/khandakar.png";
 import enamul from "../../../public/advisor/enamul.jpg";
 import farid from "../../../public/advisor/farid.jpg";
 import golam from "../../../public/advisor/golam.jpg";
@@ -26,9 +27,9 @@ import Image from "next/image";
 const advisors = [
   {
     id: "1",
-    name: "Mr. Md. Abul Kalam Azad",
+    name: "Mr. Md. Abul Kalam Azad, MP",
     designation:
-      " Former Principal Secretary &n Principal Coordinator (SDG Affairs), PMO",
+      " Member of Parliament, Bangladesh Jatiya Sangsad",
     photo: azad,
   },
   {
@@ -92,6 +93,12 @@ const advisors = [
     id: "9",
     name: "Mr. Sami Ahmed",
     designation: " Managing Director, Startup Bangladesh Limited",
+    photo: khandakar,
+  },
+  {
+    id: "10",
+    name: "Prof. Dr. Khondaker A. Mamun",
+    designation: " Professor & Director, IRIIC, United International University (UIU)",
     photo: sami,
   },
   

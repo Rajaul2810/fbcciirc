@@ -4,29 +4,38 @@ import bikarna from "../../../../public/team/bikarna.png";
 import dinar from "../../../../public/team/dinar.png";
 import rafia from "../../../../public/team/rafia.png";
 import zarin from "../../../../public/team/zarin.png";
+import alamin from "../../../../public/team/alamin.jpg";
 import Image from "next/image";
 
 const teams = [
   {
-    id: 2,
-    name: "Mr. Md. Entakhab Dinar",
-    email: "mdshefat222@gmail.com",
-    rule: "Executive",
-    photo: dinar,
+    id: 1,
+    name: "Mr. Al-Amin Mian",
+    email: "alaminmian@fbcciirc.org",
+    rule: "Accountant",
+    photo: alamin,
   },
+  
   {
     id: 3,
     name: "Ms. Rafia Islam",
-    email: "rafiafbcciirc@gmail.com",
+    email: "rafiaislam@fbcciirc.org",
     rule: "Executive",
     photo: rafia,
   },
   {
     id: 4,
     name: "Ms. Zarin Tasnim",
-    email: "zarintasnim.firc@gmail.com",
+    email: "zerinnahin@fbcciirc.org",
     rule: "Executive",
     photo: zarin,
+  },
+  {
+    id: 2,
+    name: "Mr. Md. Entakhab Dinar",
+    email: "entakhab@fbcciirc.org",
+    rule: "Executive",
+    photo: dinar,
   },
 ];
 
@@ -53,7 +62,7 @@ const Team = () => {
                 Dr. Bikarna Kumar Ghosh
               </h1>
               <h1 className=" text-xs font-bold text-gray-700 text-center">
-                bikarnag@gmail.com
+              ceo@fbcciirc.org
               </h1>
               <h1 className=" text-sm text-gray-700 text-center">
                 Chief Executive Officer
@@ -63,13 +72,13 @@ const Team = () => {
         </div>
       </div>
       <div className=" flex justify-center">
-        <div className=" w-72 md:w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5 mb-5">
+        <div className="w-11/12 md:w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-5 mb-5">
           {teams.map((item) => (
             <div
               data-aos="fade-up"
               data-aos-duration="3000"
               key={item.id}
-              className=" bg-white shadow-md hover:shadow-md rounded-md transition duration-150 hover:scale-105 w-72"
+              className=" bg-white shadow-md hover:shadow-md rounded-md transition duration-150 hover:scale-105"
             >
               <div className=" flex justify-center">
                 <Image

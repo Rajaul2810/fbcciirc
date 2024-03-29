@@ -33,11 +33,11 @@ const Navbar = () => {
         <div className=" flex gap-2">
           <p className=" text-xs text-white flex items-center font-bold">
             <CiMail />
-            fbcci.irc@gmail.com
+            secretariat@fbcciirc.org
           </p>
           <p className=" text-xs text-white flex items-center font-bold">
             <CiPhone />
-            +8801000000000
+            +8801783014227
           </p>
         </div>
       </div>
@@ -131,6 +131,14 @@ const Navbar = () => {
                   className="text-lg flex hover:bg-amber-300 "
                 >
                   Training
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/career"
+                  className="text-lg flex hover:bg-amber-300"
+                >
+                  Career
                 </Link>
               </li>
               <li>
@@ -244,6 +252,11 @@ const Navbar = () => {
                 className="text-lg flex hover:bg-amber-300 "
               >
                 Training
+              </Link>
+            </li>
+            <li>
+              <Link href="/career" className="text-lg flex hover:bg-amber-300">
+                Career
               </Link>
             </li>
             <li>

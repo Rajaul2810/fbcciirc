@@ -30,13 +30,38 @@ import g7 from "../../../../public/gellary/g7.jpg";
 import g8 from "../../../../public/gellary/g8.JPG";
 import g9 from "../../../../public/gellary/g9.JPG";
 import g10 from "../../../../public/gellary/g10.JPG";
+import g13 from "../../../../public/gellary/g13.jpeg";
+import g14 from "../../../../public/gellary/g14.jpeg";
+import g15 from "../../../../public/gellary/g15.jpeg";
+import g16 from "../../../../public/gellary/g16.jpeg";
+import g17 from "../../../../public/gellary/g17.jpeg";
+import g18 from "../../../../public/gellary/g18.jpeg";
+import g19 from "../../../../public/gellary/g19.jpeg";
+import g20 from "../../../../public/gellary/g20.jpg";
+import g21 from "../../../../public/gellary/g21.jpg";
+import g22 from "../../../../public/gellary/g22.jpeg";
+import g23 from "../../../../public/gellary/g23.jpeg";
+import g24 from "../../../../public/gellary/g24.jpeg";
+import g25 from "../../../../public/gellary/g25.jpeg";
+import g26 from "../../../../public/gellary/g26.jpeg";
+import g27 from "../../../../public/gellary/g27.jpeg";
+import g28 from "../../../../public/gellary/g28.jpg";
+import g29 from "../../../../public/gellary/g29.jpeg";
+import g30 from "../../../../public/gellary/g30.jpeg";
 import s1 from "../../../../public/gellary/s1.jpeg";
 import s2 from "../../../../public/gellary/s2.jpeg";
 import s3 from "../../../../public/gellary/s3.jpeg";
 import s4 from "../../../../public/gellary/s4.jpeg";
 import s5 from "../../../../public/gellary/s5.jpeg";
 import s6 from "../../../../public/gellary/s6.jpeg";
+import s7 from "../../../../public/gellary/s7.jpeg";
+import s8 from "../../../../public/gellary/s8.jpeg";
+import s9 from "../../../../public/gellary/s9.jpeg";
 import s12 from "../../../../public/gellary/s12.jpg";
+import s10 from "../../../../public/gellary/s10.jpg";
+import s13 from "../../../../public/gellary/s13.jpeg";
+import s14 from "../../../../public/gellary/s14.jpeg";
+import s15 from "../../../../public/gellary/s15.jpeg";
 import f1 from "../../../../public/gellary/f1.jpeg";
 import f2 from "../../../../public/gellary/f2.jpeg";
 import f3 from "../../../../public/gellary/f3.jpeg";
@@ -178,6 +203,150 @@ const images = [
     date: "01 October 2023",
   },
   {
+    id: 39,
+    link: g13,
+    tittle:
+      "MoU with Nijer Bolar Moto Ekta Golpo Foundation",
+    rule: "signing",
+    date: "19-12-2023",
+  },
+  {
+    id: 40,
+    link: g14,
+    tittle:
+      "MoU with Nijer Bolar Moto Ekta Golpo Foundation",
+    rule: "signing",
+    date: "19-12-2023",
+  },
+  {
+    id: 41,
+    link: g15,
+    tittle:
+      "MoU with CTO Forum",
+    rule: "signing",
+    date: "19-12-2023",
+  },
+  {
+    id: 42,
+    link: g16,
+    tittle:
+      "MoU with Nijer Bolar Moto Ekta Golpo Foundation",
+    rule: "signing",
+    date: "19-12-2023",
+  },
+  {
+    id: 43,
+    link: g17,
+    tittle:
+      "MoU with CTO Forum",
+    rule: "signing",
+    date: "19-12-2023",
+  },
+  {
+    id: 44,
+    link: g18,
+    tittle:
+      "MoU with CTO Forum",
+    rule: "signing",
+    date: "19-12-2023",
+  },
+  {
+    id: 45,
+    link: g19,
+    tittle:
+      "MoU with CTO Forum",
+    rule: "signing",
+    date: "19-12-2023",
+  },
+  {
+    id: 46,
+    link: g20,
+    tittle:
+      "MoU with Faction AI USA",
+    rule: "signing",
+    date: "18-06-2023",
+  },
+  {
+    id: 47,
+    link: g21,
+    tittle:
+      "MoU with Orel IT ",
+    rule: "signing",
+    date: "22-02-2024",
+  },
+  {
+    id: 48,
+    link: g22,
+    tittle:
+      "MoU with Orel IT ",
+    rule: "signing",
+    date: "22-02-2024",
+  },
+  {
+    id: 49,
+    link: g23,
+    tittle:
+      "MoU with Orel IT ",
+    rule: "signing",
+    date: "22-02-2024",
+  },
+  {
+    id: 50,
+    link: g24,
+    tittle:
+      "MoU with Orel IT ",
+    rule: "signing",
+    date: "22-02-2024",
+  },
+  {
+    id: 51,
+    link: g25,
+    tittle:
+      "MoU with Orel IT ",
+    rule: "signing",
+    date: "22-02-2024",
+  },
+  {
+    id: 52,
+    link: g26,
+    tittle:
+      "MoU with AI CERTs  ",
+    rule: "signing",
+    date: "05-02-2024",
+  },
+  {
+    id: 53,
+    link: g27,
+    tittle:
+      "MoU with AI CERTs",
+    rule: "signing",
+    date: "05-02-2024",
+  },
+  {
+    id: 54,
+    link: g28,
+    tittle:
+      "MoU among CIDAUK_RISE BUET_FBCCI IRC ",
+    rule: "signing",
+    date: "27-02-2024",
+  },
+  {
+    id: 55,
+    link: g29,
+    tittle:
+      "MoU among CIDAUK_RISE BUET_FBCCI IRC",
+    rule: "signing",
+    date: "27-02-2024",
+  },
+  {
+    id: 56,
+    link: g30,
+    tittle:
+      "MoU among CIDAUK_RISE BUET_FBCCI IRC",
+    rule: "signing",
+    date: "27-02-2024",
+  },
+  {
     id: 19,
     link: g1,
     tittle:
@@ -186,7 +355,7 @@ const images = [
     date: "21 October 2023",
   },
   {
-    id: 20,
+    id: 68,
     link: g2,
     tittle:
       "FBCCI-IRC & GEN Bangladesh and FBCCI-IRC & WUST MoU Signing Ceremony",
@@ -194,7 +363,7 @@ const images = [
     date: "21 October 2023",
   },
   {
-    id: 20,
+    id: 67,
     link: g3,
     tittle:
       "FBCCI-IRC & GEN Bangladesh and FBCCI-IRC & WUST MoU Signing Ceremony",
@@ -202,7 +371,7 @@ const images = [
     date: "21 October 2023",
   },
   {
-    id: 20,
+    id: 66,
     link: g4,
     tittle:
       "FBCCI-IRC & GEN Bangladesh and FBCCI-IRC & WUST MoU Signing Ceremony",
@@ -210,7 +379,7 @@ const images = [
     date: "21 October 2023",
   },
   {
-    id: 20,
+    id: 65,
     link: g5,
     tittle:
       "FBCCI-IRC & GEN Bangladesh and FBCCI-IRC & WUST MoU Signing Ceremony",
@@ -218,7 +387,7 @@ const images = [
     date: "21 October 2023",
   },
   {
-    id: 20,
+    id: 64,
     link: g6,
     tittle:
       "FBCCI-IRC & GEN Bangladesh and FBCCI-IRC & WUST MoU Signing Ceremony",
@@ -226,7 +395,7 @@ const images = [
     date: "21 October 2023",
   },
   {
-    id: 20,
+    id: 63,
     link: g7,
     tittle:
       "FBCCI-IRC & GEN Bangladesh and FBCCI-IRC & WUST MoU Signing Ceremony",
@@ -234,7 +403,7 @@ const images = [
     date: "21 October 2023",
   },
   {
-    id: 20,
+    id: 62,
     link: g8,
     tittle:
       "FBCCI-IRC & GEN Bangladesh and FBCCI-IRC & WUST MoU Signing Ceremony",
@@ -242,7 +411,7 @@ const images = [
     date: "21 October 2023",
   },
   {
-    id: 20,
+    id: 61,
     link: g9,
     tittle:
       "FBCCI-IRC & GEN Bangladesh and FBCCI-IRC & WUST MoU Signing Ceremony",
@@ -250,13 +419,14 @@ const images = [
     date: "21 October 2023",
   },
   {
-    id: 20,
+    id: 60,
     link: g10,
     tittle:
       "FBCCI-IRC & GEN Bangladesh and FBCCI-IRC & WUST MoU Signing Ceremony",
     rule: "signing",
     date: "21 October 2023",
   },
+  
   {
     id: 21,
     link: s1,
@@ -333,6 +503,55 @@ const images = [
     tittle: "Fire Service Mohora held at FBCCI-IRC",
     rule: "fire",
     date: "03 October 2023",
+  },
+  {
+    id: 59,
+    link: s10,
+    tittle: "Seminar on “Artificial Intelligence; Its Potential and challenges in Bangladesh Perspective",
+    rule: "session",
+    date: " 05-02-2024",
+  },
+  {
+    id: 59,
+    link: s7,
+    tittle: "Seminar on “Artificial Intelligence; Its Potential and challenges in Bangladesh Perspective",
+    rule: "session",
+    date: " 05-02-2024",
+  },
+  {
+    id: 57,
+    link: s8,
+    tittle: "Seminar on “Artificial Intelligence; Its Potential and challenges in Bangladesh Perspective",
+    rule: "session",
+    date: "05-02-2024",
+  },
+  {
+    id: 58,
+    link: s9,
+    tittle: "Seminar on “Artificial Intelligence; Its Potential and challenges in Bangladesh Perspective",
+    rule: "session",
+    date: " 05-02-2024",
+  },
+  {
+    id: 58,
+    link: s13,
+    tittle: "Seminar on Business Innovation_Prospects and Challenges And MoU among CIDAUK, RISE BUET and FBCCI IRC",
+    rule: "session",
+    date: " 27-02-2024",
+  },
+  {
+    id: 58,
+    link: s14,
+    tittle: "Seminar on Business Innovation_Prospects and Challenges And MoU among CIDAUK, RISE BUET and FBCCI IRC",
+    rule: "session",
+    date: " 27-02-2024",
+  },
+  {
+    id: 58,
+    link: s9,
+    tittle: "Seminar on Business Innovation_Prospects and Challenges And MoU among CIDAUK, RISE BUET and FBCCI IRC",
+    rule: "session",
+    date: " 27-02-2024",
   },
   {
     id: 31,

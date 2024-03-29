@@ -59,7 +59,7 @@ const governing = [
   },
   {
     id: "7",
-    Names: "Mr. A. K. Azad",
+    Names: "Mr. A. K. Azad, MP",
     Designation: "Director",
     Photo: azad,
   },
@@ -119,7 +119,7 @@ const governing = [
   },
   {
     id: "17",
-    Names: "Dr. Nazia Binte Amin",
+    Names: "Dr. Nazia Binte Amin, MP",
     Designation: "Director",
     Photo: nazia,
   },

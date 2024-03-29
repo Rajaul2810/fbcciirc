@@ -4,7 +4,6 @@ import Marquee from "react-fast-marquee";
 import Image from 'next/image';
 import faction from '../../../public/partner/faction.png'
 import aws from '../../../public/partner/aws.png'
-import buet from '../../../public/partner/buet.png'
 import uiu from '../../../public/partner/uiu.png'
 import uncdp from '../../../public/partner/uncdp.png'
 import undp from '../../../public/partner/undp.png'
@@ -13,6 +12,11 @@ import gen from '../../../public/partner/genbd.svg'
 import cmsf from '../../../public/partner/cmsf.png'
 import nijer from '../../../public/partner/nij.png'
 import microsoft from '../../../public/partner/microsoft.png'
+import cto from '../../../public/partner/cto.jpeg'
+import buet from '../../../public/partner/buet.jpeg'
+import cidauk from '../../../public/partner/cidauk.jpg'
+import orel from '../../../public/partner/orel.png'
+import ithub from '../../../public/partner/ithub.jpg'
 
 const partners = [
   {
@@ -69,6 +73,26 @@ const partners = [
     id:12,
     name:'Microsoft',
     photo:microsoft
+  },
+  {
+    id:13,
+    name:'IT HUB Incorporated',
+    photo:ithub
+  },
+  {
+    id:14,
+    name:'OREL IT',
+    photo:orel
+  },
+  {
+    id:15,
+    name:'CIDAUK Incubation Centre',
+    photo:cidauk
+  },
+  {
+    id:16,
+    name:'CTO Forum',
+    photo:cto
   },
 ]
 

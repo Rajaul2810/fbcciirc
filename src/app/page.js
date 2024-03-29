@@ -9,6 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Videos from './Components/Videos';
+import IntroChairmanCeo from './Components/IntroChairmanCeo';
 
 export default function Home() {
 
@@ -20,6 +21,7 @@ export default function Home() {
     <div>
       <Hero />
       <Intro/>
+      <IntroChairmanCeo/>
       <Videos/>
       <WorkingSector/>
       <Partner/>

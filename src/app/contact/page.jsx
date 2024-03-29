@@ -16,21 +16,21 @@ const Contact = () => {
                             <p className=' bg-gradient-to-r from-amber-600 to-amber-400 p-3 w-10 h-10 rounded-full  shadow-indigo-500/50 shadow-md bg-white'><FiMapPin color='white' /></p>
                             <div className=' ms-5 text-gray-500'>
                                 <p className=' font-bold text-black'>Our Address:</p>
-                                <p className=' text-sm'>FBCCI Innovation & Research Centre, 25, Shahid Nazrul Islam Sarak, Hatkhola, Dhaka</p>
+                                <p className=' text-sm'>FBCCI Innovation & Research Centre, 25, Shahid Nazrul Islam Sarak, Hatkhola, Dhaka 1203</p>
                             </div>
                         </div>
                         <div className='mb-2 flex items-center p-3 shadow-lg me-1 rounded-lg bg-white'>
                             <p className=' bg-gradient-to-r from-amber-600 to-amber-400 p-3 w-10 h-10 rounded-full shadow-indigo-500/50 shadow-md bg-white'><FiMail color='white' /></p>
                             <div className=' ms-5 text-gray-500'>
                                 <p className=' font-bold text-black'>Our Mailbox:</p>
-                                <a href='mailto:fbcci.irc@gmail.com' className=' text-sm'>fbcci.irc@gmail.com</a>
+                                <a href='mailto:fbcci.irc@gmail.com' className=' text-sm'>secretariat@fbcciirc.org</a>
                             </div>
                         </div>
                         <div className=' mb-2 flex p-3 shadow-lg me-1 rounded-lg bg-white'>
                             <p className=' bg-gradient-to-r from-amber-600 to-amber-400 p-3 w-10 h-10 rounded-full shadow-indigo-500/50 shadow-md bg-white'><FiPhone color='white' /></p>
                             <div className='ms-5 text-gray-500'>
                                 <p className=' font-bold text-black'>Our Phone:</p>
-                                <p className=' text-sm'>+88 01000000000</p>
+                                <p className=' text-sm'>+88 01783014227</p>
                             </div>
                         </div>
 
